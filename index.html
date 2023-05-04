@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>COLEGIO IES CAVANILLES FULLSTACK</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/css.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html"> <img src="images/casa.png" length=10% width=10% ></a></li> 
+                    <li><a href="alumno.html">Perfil Alumno</a></li>
+                    <li><a href="profesor.html">Perfil Profesor</a></li>
+                </ul>
+            </nav>
+
+            <h1>COLEGIO IES CAVANILLES FULLSTACK</h1>
+            <hr class="hr">
+        </header>
+
+        <section>
+            <h2>¡BIENVENIDOS A LA PÁGINA WEB DEL COLEGIO IES CAVANILLES FULLSTACK!</h2>
+
+
+        </section>
+
+        <div id="carrusel">
+            <style>
+               #carrusel {
+                margin-top: 20%;
+                position: center;
+                margin-left: 25%;
+                height: 40%;
+                width: 50%;
+               }
+    
+                .slide {
+                    position: relative;
+                    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+                    margin-top: 26px;
+                }
+                .slide-inner {
+                    position: absolute;
+                    overflow: hidden;
+                    width: 100%;
+                    height: calc( 300px + 3em);
+                }
+                .slide-open:checked + .slide-item {
+                    position: static;
+                    opacity: 100;
+                }
+                .slide-item {
+                    position: absolute;
+                    opacity: 0;
+                    -webkit-transition: opacity 0.6s ease-out;
+                    transition: opacity 0.6s ease-out;
+                }
+                .slide-item img {
+                    display: block;
+                    height: auto;
+                    max-width: 100%;
+                }
+                .slide-control {
+                    background: rgba(0, 0, 0, 0.28);
+                    border-radius: 50%;
+                    color: #fff;
+                    cursor: pointer;
+                    display: none;
+                    font-size: 40px;
+                    height: 40px;
+                    line-height: 35px;
+                    position: absolute;
+                    top: 50%;
+                    -webkit-transform: translate(0, -50%);
+                    cursor: pointer;
+                    -ms-transform: translate(0, -50%);
+                    transform: translate(0, -50%);
+                    text-align: center;
+                    width: 40px;
+                    z-index: 10;
+                }
+                .slide-control.prev {
+                    left: 2%;
+                }
+                .slide-control.next {
+                    right: 2%;
+                }
+                .slide-control:hover {
+                    background: rgba(0, 0, 0, 0.8);
+                    color: #aaaaaa;
+                }
+                #slide-1:checked ~ .control-1,
+                #slide-2:checked ~ .control-2,
+                #slide-3:checked ~ .control-3 {
+                    display: block;
+                }
+                .slide-indicador {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    position: absolute;
+                    top: 500;
+                    bottom: 2%;
+                    left: 0;
+                    right: 0;
+                    text-align: center;
+                    z-index: 10;
+                }
+                .slide-indicador li {
+                    display: inline-block;
+                    margin: 0 5px;
+                }
+                .slide-circulo {
+                    color: #828282;
+                    cursor: pointer;
+                    display: block;
+                    font-size: 35px;
+                }
+                .slide-circulo:hover {
+                    color: #aaaaaa;
+                }
+                #slide-1:checked ~ .control-1 ~ .slide-indicador 
+                     li:nth-child(1) .slide-circulo,
+                #slide-2:checked ~ .control-2 ~ .slide-indicador 
+                      li:nth-child(2) .slide-circulo,
+                #slide-3:checked ~ .control-3 ~ .slide-indicador 
+                      li:nth-child(3) .slide-circulo {
+                    color: #428bca;
+                }
+
+
+                #titulo {
+                    width: 100%;
+                    position: absolute;
+                    top: 500%;
+                    padding: 0px;
+                    margin: 0px auto;
+                    text-align: center;
+                    font-size: 27px;
+                    color: rgba(255, 255, 255, 1);
+                    font-family: 'Open Sans', sans-serif;
+                    z-index: 9999;
+                    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), 
+                         -1px 0px 2px rgba(255, 255, 255, 0);
+                }
+            </style>
+            <div class="slide">
+                <div class="slide-inner">
+                    <input class="slide-open" type="radio" id="slide-1" 
+                          name="slide" aria-hidden="true" hidden="" checked="checked">
+                    <div class="slide-item">
+                        <img src="images/cavanilles1.jpg">
+                    </div>
+                    <input class="slide-open" type="radio" id="slide-2" 
+                          name="slide" aria-hidden="true" hidden="">
+                    <div class="slide-item">
+                        <img src="images/cavanilles2.jpg">
+                    </div>
+                    <input class="slide-open" type="radio" id="slide-3" 
+                          name="slide" aria-hidden="true" hidden="">
+                    <div class="slide-item">
+                        <img src="images/cavanilles3.jpeg" height="50%" width="-50%">
+                    </div>
+                    <label for="slide-3" class="slide-control prev control-1">‹</label>
+                    <label for="slide-2" class="slide-control next control-1">›</label>
+                    <label for="slide-1" class="slide-control prev control-2">‹</label>
+                    <label for="slide-3" class="slide-control next control-2">›</label>
+                    <label for="slide-2" class="slide-control prev control-3">‹</label>
+                    <label for="slide-1" class="slide-control next control-3">›</label>
+                    <ol class="slide-indicador">
+                        <li>
+                            <label for="slide-1" class="slide-circulo">•</label>
+                        </li>
+                        <li>
+                            <label for="slide-2" class="slide-circulo">•</label>
+                        </li>
+                        <li>
+                            <label for="slide-3" class="slide-circulo">•</label>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    
+
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script src="" async defer></script>
+    </body>
+</html>
