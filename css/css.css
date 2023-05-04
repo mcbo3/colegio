@@ -12,6 +12,7 @@ nav {
   }
 
   nav ul {
+    background-color: blue;
     list-style: none;
     overflow: hidden; 
   }
@@ -71,5 +72,22 @@ body {
 
 .persona {
     text-align: center;
+
+}
+
+
+#cavanillesLogo {
+    align-items: center;
+
+}
+
+#principal {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inicio{background-color: aliceblue;
 
 }
