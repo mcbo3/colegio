@@ -12,7 +12,6 @@ nav {
   }
 
   nav ul {
-    background-color: blue;
     list-style: none;
     overflow: hidden; 
   }
@@ -82,12 +81,60 @@ body {
 }
 
 #principal {
-    background-color: rgb(0, 0, 0);
     color: white;
     display: flex;
     justify-content: space-between;
 }
 
-.inicio{background-color: aliceblue;
+.inicio{
+    background-color: rgb(187, 15, 118);
+    display:flex;
+    
+
 
 }
+
+.calendario {
+    background-color: blueviolet;
+    display: flex;
+}
+
+.asignaturas{
+background-color: rgb(38, 87, 131);
+    display: flex;
+}
+
+.contacto{
+    background-color: brown;
+    display: flex;
+}
+
+.faltas {
+    background-color: coral;
+    display: flex;
+}
+
+flexbox { 
+    display: flex
+}
+
+label {
+    display: flex;
+    align-items: center;
+  }
+  
+  span::after {
+    padding-left: 5px;
+  }
+  
+  input:invalid + span::after {
+    content: "✖";
+  }
+  
+  input:valid + span::after {
+    content: "✓";
+  }
+
+  
+
+  
